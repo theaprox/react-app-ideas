@@ -1,8 +1,19 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+UI components using [shadcn/ui](https://ui.shadcn.com/).
 
 ## Getting Started
 
-First, run the development server:
+**First clone the repository:**
+```git
+git clone https://github.com/theaprox/react-app-ideas.git
+```
+
+**Then install node_modules with:**
+```
+npm install
+```
+
+**And finally run the development server:**
 
 ```bash
 npm run dev
