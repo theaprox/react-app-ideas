@@ -1,0 +1,32 @@
+{
+    "variant": "link",
+    "pages": {
+        "home": {
+            "navbar": true,
+            "sidebar": true,
+            "label": "Home",
+			"alt": "Go to homepage",
+            "title": "Home",
+            "url": "/home",
+            "description": "Homepage to 'app ideas with react' page for application projects from app-ideas github repository built with Next.js, React, Tailwind CSS, and Shadcn UI."
+        },
+        "about": {
+            "navbar": true,
+            "sidebar": true,
+            "label": "About",
+			"alt": "Go to about page",
+            "title": "About",
+            "url": "/about",
+            "description": "App ideas with react about page, explaining how and why it is built, and how to use it."
+        },
+        "projects": {
+            "navbar": true,
+            "sidebar": true,
+            "label": "Projects",
+			"alt": "Go to project list page",
+            "title": "Project List",
+            "url": "/projects",
+            "description": "the list of complete and WIP projects, with previews."
+        }
+    }
+}

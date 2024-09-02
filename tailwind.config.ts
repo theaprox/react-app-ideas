@@ -3,8 +3,8 @@ import type { Config } from "tailwindcss"
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
+    './app/pages/**/*.{ts,tsx}',
+    './app/components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
@@ -12,9 +12,18 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
-        "2xl": "1400px",
+        // phones => @media (min-width: 0px) { ... }
+        'sm': "640px",
+
+        // tablets => @media (min-width: 768px) { ... }
+        'md': "768px",
+        'lg': "1024px",
+        
+        // desktop => @media (min-width: 1280px) { ... }
+        'xl': "1280px",
+        '2xl': "1536px",
       },
     },
     extend: {
@@ -52,6 +61,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          start: '#FFA400',
+          end: '#DB01FE',
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

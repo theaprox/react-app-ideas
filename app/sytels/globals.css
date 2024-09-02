@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 214 70% 95%;
+        --foreground: 214 5% 3%;
+        --card: 214 50% 90%;
+        --card-foreground: 214 5% 10%;
+        --popover: 214 50% 93%;
+        --popover-foreground: 214 95% 3%;
+        --primary: 214 33.3% 5%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 214 30% 70%;
+        --secondary-foreground: 0 0% 0%;
+        --muted: 176 30% 85%;
+        --muted-foreground: 214 5% 35%;
+        --accent: 176 30% 80%;
+        --accent-foreground: 214 5% 10%;
+        --destructive: 0 70% 30%;
+        --destructive-foreground: 214 5% 90%;
+        --border: 214 30% 50%;
+        --input: 214 30% 18%;
+        --ring: 214 33.3% 9.4%;
+        --radius: 0.3rem;
+    }
+    .dark {
+        --background: 214 50% 5%;
+        --foreground: 214 5% 90%;
+        --card: 214 50% 1%;
+        --card-foreground: 214 5% 90%;
+        --popover: 214 50% 3%;
+        --popover-foreground: 214 5% 90%;
+        --primary: 214 70% 95%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 214 30% 10%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 176 30% 15%;
+        --muted-foreground: 214 5% 60%;
+        --accent: 176 30% 15%;
+        --accent-foreground: 214 5% 90%;
+        --destructive: 0 70% 30%;
+        --destructive-foreground: 214 5% 90%;
+        --border: 214 30% 18%;
+        --input: 214 30% 18%;
+        --ring: 214 33.3% 9.4%;
+        --radius: 0.3rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        font-size: 11pt;
+        font-weight: 300;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    text-transform: none;
+    line-height: 1em;
+    letter-spacing: 0.0618em;
+    width: auto;
+    height: auto;
+    & em {
+        font-weight: 400;
+        padding-right: 0.1em;
+        background: linear-gradient(90deg, #ffa400, #db01fe);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+}
+
+p {
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 3.438em;
+}
+h2 {
+    font-size: 2.125em;
+}
+h3 {
+    font-size: 1.875em;
+}
+h4 {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1.25em;
+}
+h6 {
+    font-size: 1.125em;
+}
+
+button:focus,
+button:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-logo {
+    height: 2em;
+    width: auto;
+    background: none;
+}
+
+.navbar-logo-figure {
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: linear-gradient(#ffa400, #db01fe);
+    border-radius: 0 61.8%;
+    rotate: -6.56deg;
+}
+
+.custom-header {
+    background-image: radial-gradient(
+            ellipse at 40% 40%,
+            rgba(0, 176, 255, 0.08) 0%,
+            rgba(0, 176, 255, 0) 50%
+        ),
+        radial-gradient(
+            ellipse at 60% 60%,
+            rgba(0, 255, 255, 0.04) 0%,
+            rgba(0, 255, 255, 0) 30%
+        );
+    background-repeat: no-repeat;
+}
+
+.hero-figure {
+    position: absolute;
+    background-image: linear-gradient(
+        135deg,
+        #ffa400,
+        #bdd7ff 48%,
+        #0166fe 68%,
+        #DB01FE 100%
+    );
+    mix-blend-mode: hard-light;
+    filter: blur(6em);
+    border-radius: 4em;
+    opacity: 0.05;
+    
+}
